@@ -36,7 +36,7 @@ public class Author {
     }
 
     public String getPicPath(){
-        if(picFilename != null) return "/upload/images/artist_pics/" + this.getId() + "/"
+        if(picFilename != null) return "/upload/images/author_pics/" + this.getId() + "/"
                 +this.getPicFilename();
         return "/images/default_profile_pic.png";
     }

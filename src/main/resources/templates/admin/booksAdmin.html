@@ -48,7 +48,7 @@
         </button>
       </form>
     </span>
-    <span class="badge bg-primary rounded-pill align-self-center" th:text="${book.getAvgReviews()} + '/100'">score</span>
+    <span class="badge bg-primary rounded-pill align-self-center" th:text="${book.getAvgReviews()} + '/10'">score</span>
   </li>
 </ul>
 <div th:if="${books.isEmpty()}">Non ci sono libri nel sistema</div>

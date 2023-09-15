@@ -27,7 +27,7 @@
     <div class="form-floating">
       <input type="number" class="my-3 form-control text-secondary" required id="floatingInputScore" placeholder="Score"
              th:field="${review.score}"><span th:if="${#fields.hasErrors('score')}" th:errors="${review.score}" th:style="'color:red'"></span>
-      <label for="floatingInputScore">Score (-/100) </label>
+      <label for="floatingInputScore">Score (-/10) </label>
     </div>
     <button class="btn btn-outline-light w-100 py-2 my-3" type="submit">Confirm</button>
   </form>

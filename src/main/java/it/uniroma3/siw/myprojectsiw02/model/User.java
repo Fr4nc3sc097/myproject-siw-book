@@ -39,7 +39,7 @@ public class User {
     public String getPicPath(){
         if(picFilename != null) return "/upload/images/user_pics/" + this.getId() + "/"
                 +this.getPicFilename();
-        return "/images/default_profile_pic.png";
+        return "/images/default_profile_pic.jpg";
     }
 
     public Set<Book> getReadList() {

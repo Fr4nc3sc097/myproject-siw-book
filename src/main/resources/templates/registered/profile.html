@@ -24,16 +24,16 @@
     </div>
     <div class="col-6">
       <div class="row">
-        <h4 class="col-auto text-light">Watch List</h4>
+        <h4 class="col-auto text-light">Read List</h4>
       </div>
       <div class="row">
-        <div th:if="${globalUser.watchList}">
+        <div th:if="${globalUser.readList}">
           <ul class="list-group">
-            <li class="list-group-item bg-dark" th:each = "movie : ${globalUser.watchList}">
+            <li class="list-group-item bg-dark" th:each = "book : ${globalUser.readList}">
               <a class="anchor-link link-light link-opacity-50 link-opacity-100-hover link-underline-opacity-0"
-                 th:href = "@{'/movie/' + ${movie.id}}"
-                 th:text = "${movie.title} + ' '">
-                <span class="mx-3 text-secondary" th:text = "${movie.year}"></span>
+                 th:href = "@{'/book/' + ${book.id}}"
+                 th:text = "${book.title} + ' '">
+                <span class="mx-3 text-secondary" th:text = "${book.year}"></span>
               </a>
             </li>
           </ul>
