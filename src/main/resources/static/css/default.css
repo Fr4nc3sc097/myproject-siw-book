@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:#212529;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: whitesmoke;
+}
+.h-7{
+    height: 7%;
+}
+.h-93{
+    height: 93%;
+}
+.w-99{
+    width: 99%!important;
+}
+.w-fit-content{
+    width: fit-content;
+}
+.h-fit-content{
+    height: fit-content;
+}
+.gradient-blue-dark{
+    background-image: linear-gradient(#1870c9, #1c3248, #1c232a, #212529);
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.place-content-center{
+    place-content: center;
+}
+
+.hover-dark:hover{
+    opacity: 70%;
+}
+.form-lr {
+    max-width: 330px;
+    padding: 1rem;
+}
