@@ -13,7 +13,7 @@ public class BookService {
     protected BookRepository bookRepository;
 
     @Transactional
-    public void createNewMovie(Book book){
+    public void createNewBook(Book book){
         this.bookRepository.save(book);
     }
     @Transactional

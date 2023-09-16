@@ -61,7 +61,7 @@ public class BookController {
     public String newBook(@Valid @ModelAttribute("book") Book book, BindingResult bindingResult, Model model){
         bookValidator.validate(book, bindingResult);
         if(!bindingResult.hasErrors()){
-            this.bookService.createNewMovie(book);
+            this.bookService.createNewBook(book);
             model.addAttribute("book", book);
             return "admin/bookAdmin";
         }else{
