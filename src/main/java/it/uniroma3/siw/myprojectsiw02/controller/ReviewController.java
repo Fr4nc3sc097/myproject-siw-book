@@ -34,7 +34,7 @@ public class ReviewController {
         return "registered/formNewReview";
     }
     @PostMapping("/registered/review/{book_id}")
-    public String newMovie(@PathVariable("book_id") Long book_id,@Valid @ModelAttribute("review") Review review, BindingResult bindingResult, Model model){
+    public String newBook(@PathVariable("book_id") Long book_id,@Valid @ModelAttribute("review") Review review, BindingResult bindingResult, Model model){
         Book book= bookService.findById(book_id);
         if(!userService.canReview(userService.getCurrentUser(), book)){
             return "errors/cannotCreateMoreReview";
