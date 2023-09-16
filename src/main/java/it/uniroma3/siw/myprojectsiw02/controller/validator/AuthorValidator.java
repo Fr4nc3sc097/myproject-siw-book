@@ -19,6 +19,6 @@ public class AuthorValidator implements Validator {
     public void validate(Object target, Errors errors) {
         Author author = (Author) target;
         if(authorService.alreadyExists(author))
-            errors.reject("artist.duplicate");
+            errors.reject("author.duplicate");
     }
 }

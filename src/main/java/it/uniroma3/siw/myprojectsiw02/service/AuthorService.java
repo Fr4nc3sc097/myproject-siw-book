@@ -23,6 +23,7 @@ public class AuthorService {
     public Author findById(Long id){
         return authorRepository.findById(id).orElse(null);
     }
+
     public Iterable<Author> findAll(){
         return authorRepository.findAll();
     }
