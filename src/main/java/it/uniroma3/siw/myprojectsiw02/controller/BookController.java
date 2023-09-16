@@ -35,7 +35,7 @@ public class BookController {
         return "books";
     }
     @GetMapping("/book/{id}")
-    public String getMovie(@PathVariable("id") Long id, Model model){
+    public String getBook(@PathVariable("id") Long id, Model model){
         Book book = bookService.findById(id);
         if(book == null) return "/errors/bookNotFoundError";
 
@@ -58,7 +58,7 @@ public class BookController {
         return "admin/booksAdmin";
     }
     @PostMapping("/admin/book")
-    public String newMovie(@Valid @ModelAttribute("book") Book book, BindingResult bindingResult, Model model){
+    public String newBook(@Valid @ModelAttribute("book") Book book, BindingResult bindingResult, Model model){
         bookValidator.validate(book, bindingResult);
         if(!bindingResult.hasErrors()){
             this.bookService.createNewMovie(book);
