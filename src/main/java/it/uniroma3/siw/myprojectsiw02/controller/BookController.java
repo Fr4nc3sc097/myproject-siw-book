@@ -43,11 +43,11 @@ public class BookController {
         return "book";
     }
     @GetMapping("/formSearchBooks")
-    public String formSearchMovies(Model model){
+    public String formSearchBooks(Model model){
         return "formSearchBooks";
     }
     @PostMapping("/searchBooks")
-    public String searchMovies(Model model, @RequestParam Integer year){
+    public String searchBooks(Model model, @RequestParam Integer year){
         model.addAttribute("books", this.bookService.findByYear(year));
         return "foundBooks";
     }
