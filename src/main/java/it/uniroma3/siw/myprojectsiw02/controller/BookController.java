@@ -182,7 +182,7 @@ public class BookController {
     }
 
     @PostMapping("/admin/saveBookImage/{id}")
-    public String saveMovieImage(@PathVariable("id") Long id,
+    public String saveBookImage(@PathVariable("id") Long id,
                                  @RequestParam("image") MultipartFile multipartFile, Model model) throws IOException {
         String fileName = StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
         Book book = bookService.findById(id);
