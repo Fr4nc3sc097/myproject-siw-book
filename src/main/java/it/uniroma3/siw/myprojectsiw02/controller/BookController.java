@@ -106,31 +106,6 @@ public class BookController {
         return "admin/bookAdmin";
     }
 
-    //@GetMapping("/admin/selectActorsToMovie/{id}")
-    //public String selectActorsToMovie(@PathVariable("id") Long id, Model model){
-      //  Movie movie = bookService.findById(id);
-        //if(movie == null) return "errors/movieNotFoundError";
-
-        //model.addAttribute("movie", movie);
-        //model.addAttribute("artists", authorService.findActorsToSel(movie));
-        //return "admin/selectActorsToMovie";
-    //}
-
-    //@GetMapping("/admin/addCategorieToBook/{book_id}/{artist_id}")
-    //public String addActorToMovie(@PathVariable("movie_id") Long movie_id,
-    //                              @PathVariable("artist_id") Long artist_id,
-    //                              Model model){
-    //    Artist actor = authorService.findById(artist_id);
-    //    if(actor == null) return "errors/artistNotFoundError";
-
-    //    Movie movie = bookService.findById(movie_id);
-    //    if(movie == null) return "errors/movieNotFoundError";
-
-    //    movie.getActors().add(actor);
-    //    bookService.save(movie);
-    //    model.addAttribute("movie", movie);
-    //    return selectActorsToMovie(movie_id, model);
-    //}
 
     @GetMapping("/admin/choseCategoryToBook/{book_id}")
     public String choseCategoryFromBookToRemove(@PathVariable("book_id") Long book_id,

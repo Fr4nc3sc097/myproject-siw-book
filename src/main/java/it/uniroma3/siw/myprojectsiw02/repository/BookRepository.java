@@ -8,4 +8,11 @@ import java.util.List;
 public interface BookRepository extends CrudRepository<Book, Long> {
     public List<Book> findByYear(Integer year);
     public boolean existsByTitleAndYear(String title, Integer year);
+
+    /*public List<Book> findByOrderByTitle();*/
+
+
+
+
+
 }

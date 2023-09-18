@@ -22,6 +22,7 @@
         <div class="fw-bold" th:text="${book.title}">Book Title</div>
         <div th:text="${book.author}">Author</div>
         <div th:text="${book.year}">Year</div>
+        <!--div th:text="${book.size}">Year</--div-->
       </div>
     </a>
     <span class="align-self-center ms-auto me-4">
@@ -39,6 +40,7 @@
         </svg>
         </button>
       </form>
+
       <form th:action="@{'/admin/removeFromMyList/' + ${book.id}}" method="get">
         <button th:if="${globalUser.getReadList().contains(book)}" type="submit" class="badge btn btn-secondary">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">

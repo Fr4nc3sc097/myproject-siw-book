@@ -23,9 +23,6 @@
     <div>
       <span class="text-light" th:if="${param.error != null}">Wrong Username or password</span>
     </div>
-    <a th:href="@{/oauth2/authorization/github}">
-      Login with github
-    </a>
     <button class="btn btn-outline-light w-100 py-2 my-3" type="submit">Sign in</button>
   </form>
 </main>
